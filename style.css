@@ -1,19 +1,14 @@
+#barpage header {
+  margin: 1rem;
+  /*display:grid;
+    grid-template-columns: 1fr 1fr;*/
+}
+
 #barpage img {
   max-width: 100%;
   height: auto;
   padding: none;
   margin: none;
-}
-
-#barpage p,
-h2,
-h3,
-header {
-  margin: 1rem;
-}
-
-#barpage h1 {
-  text-align: center;
 }
 
 #barpage {
@@ -27,6 +22,7 @@ header {
 
 #barpage a:link {
   color: white;
+  font-family: "orpheuspro", sans-serif;
 }
 
 #barpage a:visited {
