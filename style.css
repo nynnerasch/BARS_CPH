@@ -1,0 +1,42 @@
+#barpage img {
+  max-width: 100%;
+  height: auto;
+  padding: none;
+  margin: none;
+}
+
+#barpage p,
+h2,
+h3,
+header {
+  margin: 1rem;
+}
+
+#barpage h1 {
+  text-align: center;
+}
+
+#barpage {
+  background-color: black;
+  color: white;
+}
+
+#barpage .rating {
+  font-size: 2rem;
+}
+
+#barpage a:link {
+  color: white;
+}
+
+#barpage a:visited {
+  color: white;
+}
+
+#barpage a:hover {
+  color: orangered;
+}
+
+#barpage a:active {
+  color: orangered;
+}
