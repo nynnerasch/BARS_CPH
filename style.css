@@ -90,3 +90,43 @@ body {
 .barname:hover {
   color: rgb(172, 86, 33);
 }
+/*BURGER MENU*/
+#indexBody {
+  background-color: rgb(24, 23, 23);
+  color: rgb(250, 246, 241);
+  margin: 0;
+}
+.burgerContent {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+}
+.burgerContent p {
+  margin: 0;
+  padding-left: 0;
+}
+.topnav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+#burger {
+  position: absolute;
+  background-image: url(../img/burger.svg);
+  background-size: cover;
+  aspect-ratio: 1/1;
+  width: 3em;
+  cursor: pointer;
+  right: 4%;
+  top: 3%;
+}
+
+/*HOME PAGE background*/
+body.homePage {
+  background-image: url(/img/BARbackgroundimg.png);
+}
+
+.homePageIntro h1 {
+  margin: 0;
+  text-align: center;
+}
