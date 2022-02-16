@@ -282,7 +282,6 @@ ul.burgerContent {
 .indre {
   grid-column: 2;
   grid-row: 2;
-  text-align: end;
 }
 .norre {
   grid-row: 3;
@@ -290,7 +289,6 @@ ul.burgerContent {
 .vester {
   grid-row: 4;
   grid-column: 2;
-  text-align: end;
 }
 .oster {
   grid-row: 5;
