@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/vxk1xmg.css" />
   </head>
-  <body>
+  <body id="barlist">
     <!-- <header>
       <nav class="myNav">
         <a href="barlist.html">all bars</a>
@@ -23,16 +23,12 @@
         <div id="burger"></div>
       </nav>
     </header> -->
-    <main class="barlist">
-      <!-- <template id="barlist"> -->
-      <h1 class="location">Location</h1>
-      <img
-        class="bannerimg"
-        src="img/nick-karvounis-B3Jt_d5E2Lk-unsplash.jpg"
-        alt="hold"
-      />
 
-      <div class="lists">
+    <h1 class="location">Christianshavn</h1>
+    <!-- <img class="bannerimg" src="img/christianshavn.jpg" alt="hold" /> -->
+
+    <main class="barlist">
+      <template class="barListTemplate">
         <article class="listarticle">
           <a href="barpage.html">
             <h2 class="barname">Barname</h2>
@@ -48,38 +44,8 @@
             </div>
           </a>
         </article>
-        <!-- </template> -->
-        <article class="listarticle">
-          <a href="barpage.html">
-            <h2 class="barname">Barname</h2>
-            <div class="barcontainer">
-              <img
-                src="https://politiken.dk/incoming/img8430910.grieag/ORIGINALS/original_615/Barkontrol%20af%20Jojo%20Vesterbro"
-                alt="barpic"
-              />
-              <div class="star">
-                <span class="rating">4.5</span>
-              </div>
-              <p class="price">$$</p>
-            </div>
-          </a>
-        </article>
-        <article class="listarticle">
-          <a href="barpage.html">
-            <h2 class="barname">Barname</h2>
-            <div class="barcontainer">
-              <img
-                src="https://politiken.dk/incoming/img8430910.grieag/ORIGINALS/original_615/Barkontrol%20af%20Jojo%20Vesterbro"
-                alt="barpic"
-              />
-              <div class="star">
-                <span class="rating">4.5</span>
-              </div>
-              <p class="price">$$</p>
-            </div>
-          </a>
-        </article>
-        <article class="listarticle">
+      </template>
+      <!-- <article class="listarticle">
           <a href="barpage.html">
             <h2 class="barname">Barname</h2>
             <div class="barcontainer">
@@ -124,7 +90,36 @@
             </div>
           </a>
         </article>
-      </div>
+        <article class="listarticle">
+          <a href="barpage.html">
+            <h2 class="barname">Barname</h2>
+            <div class="barcontainer">
+              <img
+                src="https://politiken.dk/incoming/img8430910.grieag/ORIGINALS/original_615/Barkontrol%20af%20Jojo%20Vesterbro"
+                alt="barpic"
+              />
+              <div class="star">
+                <span class="rating">4.5</span>
+              </div>
+              <p class="price">$$</p>
+            </div>
+          </a>
+        </article>
+        <article class="listarticle">
+          <a href="barpage.html">
+            <h2 class="barname">Barname</h2>
+            <div class="barcontainer">
+              <img
+                src="https://politiken.dk/incoming/img8430910.grieag/ORIGINALS/original_615/Barkontrol%20af%20Jojo%20Vesterbro"
+                alt="barpic"
+              />
+              <div class="star">
+                <span class="rating">4.5</span>
+              </div>
+              <p class="price">$$</p>
+            </div>
+          </a>
+        </article> -->
     </main>
     <footer></footer>
     <script src="js/barlist.js"></script>

@@ -1,3 +1,4 @@
+/* BAR PAGE */
 #barpage header {
   margin: 1rem;
   /*display:grid;
@@ -40,15 +41,16 @@ body {
   margin: 0;
   padding: 0;
 }
+#barlist {
+  background-color: black;
+}
+
 .barlist {
   background-color: rgb(1, 1, 1);
   color: whitesmoke;
-}
-
-.lists {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 200px));
-  gap: 3rem;
+  gap: 4rem;
   justify-content: center;
 }
 
@@ -56,10 +58,13 @@ body {
   max-width: 100%;
 }
 
-.bannerimg {
+/* .bannerimg {
   width: 100vw;
   height: auto;
-}
+  display: grid;
+  grid-column: 1/-1;
+  padding-bottom: 5rem;
+} */
 
 .barlist a {
   color: whitesmoke;
@@ -89,6 +94,14 @@ body {
 
 .barname:hover {
   color: rgb(172, 86, 33);
+}
+
+.location {
+  color: white;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  border-bottom: white solid 1px;
+  font-size: 6rem;
 }
 /*BURGER MENU*/
 #indexBody {
