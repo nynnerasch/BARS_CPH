@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 #barpage header {
   margin: 1rem;
   /*display:grid;
@@ -99,19 +103,29 @@ body {
 .burgerContent {
   display: none;
   list-style-type: none;
-  margin: 0;
+  position: fixed;
+  width: 100vw;
 }
-.burgerContent p {
-  margin: 0;
-  padding-left: 0;
+ul.burgerContent li {
+  text-align: center;
 }
 .topnav a {
   display: block;
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
 }
+ul.burgerContent {
+  background-color: rgba(0, 0, 0, 0.24);
+  margin-top: 0;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-bottom: 1.5rem;
+}
+
 #burger {
-  position: absolute;
+  position: fixed;
   background-image: url(../img/burger.svg);
   background-size: cover;
   aspect-ratio: 1/1;
@@ -122,11 +136,52 @@ body {
 }
 
 /*HOME PAGE background*/
-body.homePage {
+/*body.homePage {
   background-image: url(/img/BARbackgroundimg.png);
-}
+  background-repeat: no-repeat;
+}*/
 
+.homePageIntro {
+  background-image: url(/img/BARbackgroundimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
 .homePageIntro h1 {
+  font-family: roc-grotesk, sans-serif;
   margin: 0;
   text-align: center;
+  font-size: 3rem;
+  padding-top: 30rem;
+  padding-right: 4rem;
+  line-height: 3rem;
+}
+.homePageIntro span {
+  font-style: italic;
+  font-family: orpheuspro, serif;
+  font-weight: 400;
+  padding-left: 6rem;
+}
+.theAreas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+.theAreas img {
+  max-width: 100%;
+}
+.indre {
+  grid-column: 2;
+  grid-row: 2;
+}
+.norre {
+  grid-row: 3;
+}
+.vester {
+  grid-row: 4;
+  grid-column: 2;
+}
+.oster {
+  grid-row: 5;
 }
