@@ -2,6 +2,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg--color: #222222;
+  --color: #f7f7f7;
+}
 /* BAR PAGE */
 #barpage header {
   margin: 1rem;
@@ -155,7 +159,7 @@ ul.burgerContent {
 }*/
 
 .homePageIntro {
-  background-image: url(/img/BARbackgroundimg.png);
+  background-image: url(/img/background-new-small.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -197,4 +201,118 @@ ul.burgerContent {
 }
 .oster {
   grid-row: 5;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1024px) {
+  /* HOMEPAGE STYLING */
+  .homePageIntro h1 {
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
+    padding-top: 10rem;
+    padding-left: 9rem;
+    line-height: 4rem;
+    text-align: left;
+  }
+  .homePageIntro span {
+    font-family: orpheuspro, serif;
+    font-weight: 400;
+    font-style: italic;
+    padding-left: 9rem;
+  }
+  .frame {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    min-width: 260px;
+    min-height: 320px;
+  }
+  .frame a {
+    text-decoration: none;
+    font-family: orpheuspro, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #f7f7f7;
+  }
+  .frame .indreBy {
+    width: 10%;
+    position: absolute;
+    top: -15px;
+    text-align: left;
+  }
+  .frame .indreBy a {
+    position: relative;
+  }
+  .frame .indreBy::after,
+  .frame .norrebro::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    width: 36vw;
+    left: 7vw;
+    height: 1px;
+    background: #f7f7f7;
+  }
+  .frame .vesterbro::after,
+  .frame .indreBy::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 34px;
+    height: 83vh;
+    left: 3rem;
+    width: 1px;
+    background: #f7f7f7;
+  }
+  .frame .christianshavn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    height: 1px;
+    left: 9rem;
+    width: 75vw;
+    background: #f7f7f7;
+  }
+  .frame .christianshavn {
+    width: 10%;
+    position: absolute;
+    top: 85vh;
+  }
+  .frame .norrebro {
+    width: 10%;
+    position: absolute;
+    top: -15px;
+    left: 46%;
+  }
+  .frame .vesterbro {
+    width: 10%;
+    position: absolute;
+    top: -15px;
+    left: 92%;
+    z-index: 3;
+  }
+
+  .frame .osterbro {
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 85vh;
+    left: 92%;
+  }
+  .homePage nav.topnav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .frame {
+    display: none;
+  }
 }
