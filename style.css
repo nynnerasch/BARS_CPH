@@ -15,9 +15,24 @@ h1 {
 
 /* BAR PAGE */
 
-#barpage p,
-h3 {
+#barpage p {
   padding: 1rem;
+  font-family: orpheuspro, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#barpage h3 {
+  padding: 1rem;
+  font-family: roc-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#barpage h1 {
+  font-family: roc-grotesk, sans-serif;
+  font-style: bold;
+  font-weight: 600;
 }
 
 #barpage img {
@@ -46,6 +61,8 @@ h3 {
 
 #barpage a:link {
   color: var(--color);
+  font-family: roc-grotesk, sans-serif;
+  font-style: normal;
 }
 
 #barpage a:visited {
@@ -76,19 +93,35 @@ h3 {
 @media only screen and (min-width: 768px) {
   #barpage img {
     max-width: 100%;
-    margin: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
-  #barpage main {
+  #barpage section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: start;
+    border-top: solid;
+    border-bottom: solid;
   }
 
   #barpage_text {
     grid-column-start: 2;
     grid-row-start: 1;
-    background-color: red;
+    margin: 0.5rem;
+  }
+
+  #barpage_text2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin: 0.5rem;
+  }
+
+  #logobar {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }
 
