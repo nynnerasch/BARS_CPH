@@ -2,12 +2,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
 :root {
   --bg--color: #222222;
   --color: #f7f7f7;
 }
-=======
 p {
   color: var(--color);
 }
@@ -15,7 +13,6 @@ h1 {
   color: var(--color);
 }
 
->>>>>>> origin/evelinaWednesdayBranch1
 /* BAR PAGE */
 #barpage header {
   margin: 1rem;
