@@ -231,6 +231,7 @@ ul.burgerContent {
 
 .homePageIntro {
   background-image: url(/img/background-new-small.png);
+  background-image: url(/img/backgroundimage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

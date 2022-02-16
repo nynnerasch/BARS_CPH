@@ -17,7 +17,7 @@ function showBar(bar) {
   console.log(bar);
   document.querySelector(".barname").textContent = bar.barname;
   document.querySelector(".address").textContent = bar.address;
-  //document.querySelector(".barimg").src = bar.img_url;
+  document.querySelector(".barimg").src = bar.img_url;
   document.querySelector(".vibe").textContent = bar.vibe;
 }
 if ((smoking = true)) {
