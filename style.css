@@ -95,38 +95,37 @@ h3 {
 
 /* BARLIST */
 
-body {
-  margin: 0;
-  padding: 0;
-}
-#barlist {
-  background-color: black;
+#barlist,
+.barlist {
+  background-color: #222222;
 }
 
 .barlist {
-  background-color: rgb(1, 1, 1);
   color: whitesmoke;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 200px));
   gap: 4rem;
   justify-content: center;
+  padding-top: 3rem;
+}
+
+.barname {
+  padding-bottom: 1rem;
 }
 
 .barlist img {
   max-width: 100%;
 }
 
-/* .bannerimg {
-  width: 100vw;
-  height: auto;
-  display: grid;
-  grid-column: 1/-1;
-  padding-bottom: 5rem;
-} */
-
 .barlist a {
   color: whitesmoke;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.listarticle:hover {
+  transform: scale(1.04);
+  transition: all 0.7s ease;
 }
 
 .barcontainer {
@@ -134,24 +133,33 @@ body {
   width: 100%;
 }
 
-.barcontainer p {
-  position: absolute;
-  top: 190px;
-  text-align: right;
+.barcontainer img {
   width: 100%;
-  right: 1rem;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0px -5px 10px rgb(0, 0, 0);
 }
 
 .barcontainer span {
   position: absolute;
-  top: 210px;
+  top: 360px;
   text-align: left;
   width: 100%;
-  left: 1rem;
+  left: 1.3rem;
+  z-index: 10;
 }
 
-.barname:hover {
-  color: rgb(172, 86, 33);
+.starnprice {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 307px;
+  text-align: right;
+  width: 100%;
+  z-index: 10;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.605);
+  font-size: 1.6rem;
 }
 
 .location {
@@ -161,6 +169,7 @@ body {
   border-bottom: white solid 1px;
   font-size: 6rem;
 }
+
 /*BURGER MENU*/
 #indexBody {
   background-color: rgb(24, 23, 23);
