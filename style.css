@@ -14,9 +14,6 @@ h1 {
 }
 
 /* BAR PAGE */
-#barpage header {
-  margin: 1rem;
-}
 
 #barpage p,
 h3 {
@@ -48,8 +45,7 @@ h3 {
 }
 
 #barpage a:link {
-  color: white;
-  font-family: "orpheuspro", sans-serif;
+  color: var(--color);
 }
 
 #barpage a:visited {
@@ -57,11 +53,7 @@ h3 {
 }
 
 #barpage a:hover {
-  color: red;
-}
-
-#barpage a:active {
-  color: red;
+  color: rgb(248, 198, 106);
 }
 
 #logobar {
