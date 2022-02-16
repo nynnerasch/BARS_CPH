@@ -14,9 +14,6 @@ h1 {
 }
 
 /* BAR PAGE */
-#barpage header {
-  margin: 1rem;
-}
 
 #barpage p,
 h3 {
@@ -48,8 +45,7 @@ h3 {
 }
 
 #barpage a:link {
-  color: white;
-  font-family: "orpheuspro", sans-serif;
+  color: var(--color);
 }
 
 #barpage a:visited {
@@ -57,11 +53,7 @@ h3 {
 }
 
 #barpage a:hover {
-  color: red;
-}
-
-#barpage a:active {
-  color: red;
+  color: rgb(248, 198, 106);
 }
 
 #logobar {
@@ -231,6 +223,7 @@ ul.burgerContent {
 
 .homePageIntro {
   background-image: url(/img/background-new-small.png);
+  background-image: url(/img/backgroundimage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -282,7 +275,6 @@ ul.burgerContent {
 .indre {
   grid-column: 2;
   grid-row: 2;
-  text-align: end;
 }
 .norre {
   grid-row: 3;
@@ -290,7 +282,6 @@ ul.burgerContent {
 .vester {
   grid-row: 4;
   grid-column: 2;
-  text-align: end;
 }
 .oster {
   grid-row: 5;
