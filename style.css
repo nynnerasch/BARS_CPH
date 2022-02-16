@@ -2,10 +2,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 :root {
   --bg--color: #222222;
   --color: #f7f7f7;
 }
+=======
+p {
+  color: var(--color);
+}
+h1 {
+  color: var(--color);
+}
+
+>>>>>>> origin/evelinaWednesdayBranch1
 /* BAR PAGE */
 #barpage header {
   margin: 1rem;
@@ -172,7 +182,7 @@ h3 {
 
 /*BURGER MENU*/
 #indexBody {
-  background-color: rgb(24, 23, 23);
+  background-color: #222222;
   color: rgb(250, 246, 241);
   margin: 0;
 }
@@ -188,16 +198,21 @@ ul.burgerContent li {
 .topnav a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: var(--color);
   font-size: 1.5rem;
   line-height: 2.7rem;
 }
+.topnav a:hover {
+  color: rgb(248, 198, 106);
+}
+
 ul.burgerContent {
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.493);
   margin-top: 0;
   padding-top: 2rem;
   padding-left: 0;
   padding-bottom: 1.5rem;
+  font-family: roc-grotesk, sans-serif;
 }
 
 #burger {
@@ -211,16 +226,21 @@ ul.burgerContent {
   top: 3%;
 }
 
-/*HOME PAGE background*/
+/*HOME PAGE*/
 /*body.homePage {
   background-image: url(/img/BARbackgroundimg.png);
   background-repeat: no-repeat;
 }*/
 
 .homePageIntro {
+<<<<<<< HEAD
   background-image: url(/img/background-new-small.png);
+=======
+  background-image: url(/img/backgroundimage.png);
+>>>>>>> origin/evelinaWednesdayBranch1
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   z-index: -1;
 }
@@ -239,17 +259,37 @@ ul.burgerContent {
   font-weight: 400;
   padding-left: 6rem;
 }
+
+/*bottom homepage the areas*/
 .theAreas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
+  gap: 1rem;
+  padding: 2rem;
 }
+.theAreas a {
+  color: var(--color);
+  font-family: orpheuspro, serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.theAreas a::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px;
+  background-color: #f7f7f7;
+}
+
 .theAreas img {
   max-width: 100%;
+  padding-top: 1rem;
 }
 .indre {
   grid-column: 2;
   grid-row: 2;
+  text-align: end;
 }
 .norre {
   grid-row: 3;
@@ -257,6 +297,7 @@ ul.burgerContent {
 .vester {
   grid-row: 4;
   grid-column: 2;
+  text-align: end;
 }
 .oster {
   grid-row: 5;
