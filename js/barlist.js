@@ -37,7 +37,7 @@ function handleBarList(data) {
     clone.querySelector(".barcontainer img").src = bar.img_url;
     clone.querySelector(".rating").textContent = bar.rating;
     clone.querySelector(".price").textContent = bar.pricerange;
-
+    clone.querySelector("a").href += bar._id;
     //Append it to the DOM
     const mainEL = document.querySelector("main");
     mainEL.appendChild(clone);

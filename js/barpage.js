@@ -1,7 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-const url = "https://kea2ndsem-4584.restdb.io/rest/barscph/" + id;
-console.log(urlParams.get("id"));
+const url = `https://kea2ndsem-4584.restdb.io/rest/barscph/${id}`;
+//console.log(urlParams.get("id"));
+console.log(url);
 //API-key
 const options = {
   headers: {
@@ -15,10 +16,10 @@ fetch(url, options)
 //populate the page
 function showBar(bar) {
   console.log(bar);
-  //document.querySelector(".barname").textContent = bar.barname;
-  // document.querySelector(".address").textContent = bar.address;
-  // document.querySelector(".barimg").src = bar.img_url;
-  // document.querySelector(".vibe").textContent = bar.vibe;
+  document.querySelector(".barname").textContent = bar.barname;
+  document.querySelector(".address").textContent = bar.address;
+  document.querySelector(".barimg").src = bar.img_url;
+  document.querySelector(".vibe").textContent = bar.vibe;
 }
 if ((smoking = true)) {
   ("yes");
