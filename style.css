@@ -217,7 +217,7 @@ body#barlist .barname {
   font-size: 1.6rem;
 }
 .star {
-  background-image: url(/img/Icon_feather-star.svg);
+  background-image: url(img/Icon_feather-star.svg);
   background-size: auto;
   background-repeat: no-repeat;
   aspect-ratio: 1/1;
@@ -281,7 +281,7 @@ ul.burgerContent {
 
 #burger {
   position: fixed;
-  background-image: url(../img/burger.svg);
+  background-image: url(img/burger.svg);
   background-size: cover;
   aspect-ratio: 1/1;
   width: 3em;
@@ -292,7 +292,7 @@ ul.burgerContent {
 }
 /*the logo*/
 #logo {
-  background-image: url(/SVG/logoTest5.svg);
+  background-image: url(SVG/logoTest5.svg);
   background-size: auto;
   position: absolute;
   background-repeat: no-repeat;
@@ -306,8 +306,8 @@ ul.burgerContent {
 /*HOME PAGE*/
 
 .homePageIntro {
-  background-image: url(/img/background-new-small.png);
-  background-image: url(/img/backgroundimage.png);
+  background-image: url(img/background-new-small.png);
+  background-image: url(img/backgroundimage.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -332,7 +332,7 @@ ul.burgerContent {
 /*SCROLL DOWN*/
 
 .downArrow {
-  background-image: url(/SVG/arrow-down.svg);
+  background-image: url(SVG/arrow-down.svg);
   background-size: auto;
   background-repeat: no-repeat;
   width: 8%;
