@@ -5,7 +5,8 @@ let barpage = document.querySelector("#barpage");
 window.addEventListener("load", clickables);
 
 document.querySelector("#burger").addEventListener("click", burgerMenu);
-
+/*here I had to use if else since the arrow only 
+exists on the home page and the java script breakes if the class doesent exist on the current page*/
 function clickables() {
   if (home) {
     document.querySelector(".downArrow").addEventListener("click", clickarrow);
