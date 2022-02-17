@@ -1,9 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
 
-const area = urlParams.get("location");
-
-const url = "https://kea2ndsem-4584.restdb.io/rest/barscph" + area;
-
+//const area = urlParams.get("location");
+const area = "Vesterbro";
+const url = `https://kea2ndsem-4584.restdb.io/rest/barscph?q={"location" : {"$in" : ["${area}"]}}`;
+console.log(url);
 //API-key
 const options = {
   headers: {
@@ -21,5 +21,5 @@ function showArea(area) {
   console.log(area);
 
   //change content
-  document.querySelector("section.theAreas a").textContent = area.area;
+  document.querySelector(".chris a").setAttribute();
 }

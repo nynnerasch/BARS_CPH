@@ -178,7 +178,7 @@ body#barlist h1.location {
 
 /*BURGER MENU*/
 #indexBody {
-  background-color: rgba(0, 0, 0, 0.493);
+  background-color: var(--bg--color);
   color: var(--color);
   margin: 0;
 }
