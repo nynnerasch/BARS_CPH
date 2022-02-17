@@ -20,6 +20,9 @@ function showBar(bar) {
   document.querySelector(".address").textContent = bar.address;
   document.querySelector(".barimg").src = bar.img_url;
   document.querySelector(".vibe").textContent = bar.vibe;
+  document.querySelector(".hours").textContent = bar.openinghours;
+  document.querySelector(".rating").textContent = bar.rating;
+  document.querySelector(".pricerange").textContent = bar.pricerange;
 }
 if ((smoking = true)) {
   ("yes");
