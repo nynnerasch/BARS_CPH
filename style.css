@@ -247,12 +247,20 @@ ul.burgerContent {
   right: 4%;
   top: 3%;
 }
+/*the logo*/
+#logo {
+  background-image: url(/SVG/logoTest5.svg);
+  background-size: auto;
+  position: fixed;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  width: 25%;
+  height: 15%;
+  top: 3%;
+  left: 4%;
+}
 
 /*HOME PAGE*/
-/*body.homePage {
-  background-image: url(/img/BARbackgroundimg.png);
-  background-repeat: no-repeat;
-}*/
 
 .homePageIntro {
   background-image: url(/img/background-new-small.png);
@@ -278,6 +286,18 @@ ul.burgerContent {
   font-weight: 400;
   padding-left: 6rem;
 }
+/*SCROLL DOWN*/
+
+.downArrow {
+  background-image: url(/SVG/arrow-down.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 8%;
+  height: 5%;
+  z-index: 2;
+  cursor: pointer;
+}
 
 /*bottom homepage the areas*/
 .theAreas {
@@ -293,7 +313,7 @@ ul.burgerContent {
   font-size: 1.5rem;
   text-decoration: none;
 }
-.theAreas a::after {
+.theAreas p::after {
   content: "";
   display: block;
   width: 150px;
@@ -318,6 +338,10 @@ ul.burgerContent {
 }
 .oster {
   grid-row: 5;
+}
+.allbars {
+  grid-row: 6;
+  grid-column: 2;
 }
 
 /* MEDIA QUERIES */
@@ -425,6 +449,22 @@ ul.burgerContent {
   }
   .homePage nav.topnav {
     display: none;
+  }
+  /*bottom hompepage styling*/
+  .theAreas div {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .theAreas {
+    grid-gap: 4rem;
+    padding: 6rem 10rem 6rem 10rem;
+  }
+  .theAreas a {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .theAreas a::after {
+    width: 250px;
   }
 }
 
