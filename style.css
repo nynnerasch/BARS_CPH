@@ -36,7 +36,7 @@ h1 {
   font-family: roc-grotesk, sans-serif;
   font-style: bold;
   font-weight: 600;
-  margin-top: 8rem;
+  padding-top: 8rem;
 }
 
 #barpage img {
@@ -159,6 +159,7 @@ h1 {
   gap: 4rem;
   justify-content: center;
   padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 body#barlist .barname {
   padding-bottom: 1rem;
@@ -287,6 +288,7 @@ ul.burgerContent {
   cursor: pointer;
   right: 4%;
   top: 3%;
+  z-index: 5;
 }
 /*the logo*/
 #logo {
@@ -392,8 +394,7 @@ footer {
   font-family: roc-grotesk, sans-serif;
   font-weight: 300;
   font-style: normal;
-  margin-top: 8rem;
-  padding: 5rem 2rem 1rem;
+  padding: 2rem 2rem 1rem;
   border-top: solid 1px var(--color);
   line-height: 2rem;
 }
