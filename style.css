@@ -47,8 +47,8 @@ h1 {
 }
 
 #barpage {
-  background-color: #222222;
-  color: #f7f7f7;
+  background-color: var(--bg--color);
+  color: var(--color);
 }
 
 #barpage .rating {
@@ -66,7 +66,7 @@ h1 {
 }
 
 #barpage a:visited {
-  color: white;
+  color: var(--color);
 }
 
 #barpage a:hover {
@@ -129,20 +129,22 @@ h1 {
 
 #barlist,
 .barlist {
-  background-color: #222222;
+  background-color: var(--bg--color);
 }
 
 .barlist {
-  color: whitesmoke;
+  color: var(--color);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 200px));
   gap: 4rem;
   justify-content: center;
   padding-top: 3rem;
 }
-
-.barname {
+body#barlist .barname {
   padding-bottom: 1rem;
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 400;
+  text-align: left;
 }
 
 .barlist img {
@@ -150,7 +152,7 @@ h1 {
 }
 
 .barlist a {
-  color: whitesmoke;
+  color: var(--color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -169,7 +171,7 @@ h1 {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  box-shadow: 0px -5px 10px rgb(0, 0, 0);
+  /*box-shadow: 0px -5px 10px rgb(0, 0, 0);*/
 }
 
 .barcontainer span {
@@ -189,23 +191,28 @@ h1 {
   text-align: right;
   width: 100%;
   z-index: 10;
-  padding: 2rem;
+  padding: 1.8rem;
   background-color: rgba(0, 0, 0, 0.605);
   font-size: 1.6rem;
 }
+.starnprice p {
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 300;
+}
+body#barlist h1.location {
+  color: var(--color);
+  padding: 8rem 3rem 3rem;
 
-.location {
-  color: white;
-  padding-top: 8rem;
-  padding-bottom: 3rem;
-  border-bottom: white solid 1px;
+  border-bottom: var(--color) solid 1px;
   font-size: 6rem;
+  font-family: orpheuspro, serif;
+  font-weight: 400;
 }
 
 /*BURGER MENU*/
 #indexBody {
-  background-color: #222222;
-  color: rgb(250, 246, 241);
+  background-color: var(--bg--color);
+  color: var(--color);
   margin: 0;
 }
 .burgerContent {
@@ -318,7 +325,7 @@ ul.burgerContent {
   display: block;
   width: 150px;
   height: 1px;
-  background-color: #f7f7f7;
+  background-color: var(--color);
 }
 
 .theAreas img {
@@ -342,6 +349,17 @@ ul.burgerContent {
 .allbars {
   grid-row: 6;
   grid-column: 2;
+}
+
+/* FOOTER */
+footer {
+  font-family: roc-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 8rem;
+  padding: 5rem 2rem 1rem;
+  border-top: solid 1px var(--color);
+  line-height: 2rem;
 }
 
 /* MEDIA QUERIES */
@@ -378,7 +396,7 @@ ul.burgerContent {
     font-weight: 400;
     font-style: italic;
     font-size: 1.5rem;
-    color: #f7f7f7;
+    color: var(--color);
   }
   .frame .indreBy {
     width: 10%;
@@ -398,7 +416,7 @@ ul.burgerContent {
     width: 36vw;
     left: 7vw;
     height: 1px;
-    background: #f7f7f7;
+    background: var(--color);
   }
   .frame .vesterbro::after,
   .frame .indreBy::before {
@@ -409,7 +427,7 @@ ul.burgerContent {
     height: 83vh;
     left: 3rem;
     width: 1px;
-    background: #f7f7f7;
+    background: var(--color);
   }
   .frame .christianshavn::after {
     content: "";
@@ -419,7 +437,7 @@ ul.burgerContent {
     height: 1px;
     left: 9rem;
     width: 75vw;
-    background: #f7f7f7;
+    background: var(--color);
   }
   .frame .christianshavn {
     width: 10%;
