@@ -198,13 +198,26 @@ body#barlist .barname {
   background-color: rgba(0, 0, 0, 0.605);
   font-size: 1.6rem;
 }
+.star {
+  background-image: url(/img/Icon\ feather-star.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  width: 10%;
+  height: 10%;
+  margin-right: 0.5rem;
+}
+.rating {
+  margin-right: auto;
+}
+
 .starnprice p {
   font-family: roc-grotesk, sans-serif;
   font-weight: 300;
 }
 body#barlist h1.location {
   color: var(--color);
-  padding: 8rem 3rem 3rem;
+  padding: 8rem 1rem 0rem 7rem;
 
   border-bottom: var(--color) solid 1px;
   font-size: 6rem;
@@ -245,6 +258,7 @@ ul.burgerContent {
   padding-left: 0;
   padding-bottom: 1.5rem;
   font-family: roc-grotesk, sans-serif;
+  z-index: 1;
 }
 
 #burger {
@@ -256,7 +270,6 @@ ul.burgerContent {
   cursor: pointer;
   right: 4%;
   top: 3%;
-  z-index: 100;
 }
 /*the logo*/
 #logo {
@@ -268,7 +281,7 @@ ul.burgerContent {
   width: 25%;
   height: 15%;
   top: 3%;
-  left: 4%;
+  left: 2%;
 }
 
 /*HOME PAGE*/
@@ -502,5 +515,16 @@ footer {
 @media screen and (max-width: 1023px) {
   .frame {
     display: none;
+  }
+  /*BAR LIST  */
+  body#barlist h1.location {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body#barlist h1.location {
+    font-size: 3rem;
+    padding: 6rem 0rem 0rem 8rem;
   }
 }
