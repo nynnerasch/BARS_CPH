@@ -23,14 +23,9 @@ function showBar(bar) {
   document.querySelector(".hours").textContent = bar.openinghours;
   document.querySelector(".rating").textContent = bar.rating;
   document.querySelector(".pricerange").textContent = bar.pricerange;
-}
-if ((smoking = true)) {
-  ("yes");
-} else {
-  ("no");
-}
-if ((outdoor = true)) {
-  ("yes");
-} else {
-  ("no");
+
+  if (bar.smoking == false) {
+    document.querySelector(".smoking").src =
+      "img/Icon_ionic-logo-no-smoking.svg";
+  }
 }
