@@ -18,10 +18,11 @@ h1 {
 
 /* BAR PAGE */
 #barpage p {
-  padding: 1rem;
-  font-family: orpheuspro, serif;
+  font-family: roc-grotesk, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 #barpage h3 {
@@ -91,6 +92,10 @@ h1 {
 
 #starandrating img {
   max-width: max-content;
+}
+
+#goback {
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
