@@ -2,6 +2,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --bg--color: #222222;
   --color: #f7f7f7;
@@ -253,12 +256,13 @@ ul.burgerContent {
   cursor: pointer;
   right: 4%;
   top: 3%;
+  z-index: 100;
 }
 /*the logo*/
 #logo {
   background-image: url(/SVG/logoTest5.svg);
   background-size: auto;
-  position: fixed;
+  position: absolute;
   background-repeat: no-repeat;
   aspect-ratio: 1/1;
   width: 25%;
@@ -299,11 +303,13 @@ ul.burgerContent {
   background-image: url(/SVG/arrow-down.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: center;
   width: 8%;
   height: 5%;
   z-index: 2;
   cursor: pointer;
+  position: absolute;
+  top: 94%;
+  left: 50%;
 }
 
 /*bottom homepage the areas*/
@@ -468,6 +474,13 @@ footer {
   .homePage nav.topnav {
     display: none;
   }
+  /*LOGO POISTION*/
+  #indexBody #logo {
+    position: absolute;
+    top: 101%;
+    left: 1%;
+  }
+
   /*bottom hompepage styling*/
   .theAreas div {
     grid-column: auto;
