@@ -1,4 +1,9 @@
-const url = "https://kea2ndsem-4584.restdb.io/rest/barscph";
+const urlParams = new URLSearchParams(window.location.search);
+const area = urlParams.get("location");
+
+// const url = "https://kea2ndsem-4584.restdb.io/rest/barscph";
+
+const url = "https://kea2ndsem-4584.restdb.io/rest/barscph?filter=" + area;
 
 //API-key
 const options = {
@@ -7,23 +12,10 @@ const options = {
   },
 };
 
-//res means response
+//fetch the data
 fetch(url, options)
-  .then((response) => {
-    if (!response.ok) {
-      throw Error(response.statusText);
-    }
-    return response.json();
-  })
-  .then((data) => {
-    //We have the data
-    console.log(data);
-    handleBarList(data);
-  })
-  .catch((e) => {
-    //Woops, something went wrong
-    console.error("An error occured:", e.message);
-  });
+  .then((res) => res.json())
+  .then((data) => handleBarList(data));
 
 function handleBarList(data) {
   data.forEach((bar) => {
@@ -33,6 +25,7 @@ function handleBarList(data) {
     //Clone it
     const clone = template.cloneNode(true);
     //Populate with data
+    document.querySelector("h1").textContent = bar.location;
     clone.querySelector("h2").textContent = bar.barname;
     clone.querySelector(".barcontainer img").src = bar.img_url;
     clone.querySelector(".rating").textContent = bar.rating;

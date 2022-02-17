@@ -1,51 +1,57 @@
-const urlParams = new URLSearchParams(window.location.search);
+// const urlParams = new URLSearchParams(window.location.search);
 
-const area = urlParams.get("location");
+// const location = urlParams.get("location");
 
-// const area = "Vesterbro";
-// ?q={"$distinct": "age"}&sort=age
-// const url = `https://kea2ndsem-4584.restdb.io/rest/barscph?q={"location" : {"$in" : ["${area}"]}}`;
-const url = `https://kea2ndsem-4584.restdb.io/rest/barscph?q={"$distinct": "location"}`;
+// const url = "https://kea2ndsem-4584.restdb.io/rest/barscph";
 
-console.log(url);
-//API-key
-const options = {
-  headers: {
-    "x-apikey": "620a2fc134fd6215658584c2",
-  },
-};
-//fetch the data
-fetch(url, options)
-  .then((res) => res.json())
-  .then((data) => showArea(data));
+// // const area = "Vesterbro";
+// // ?q={"$distinct": "age"}&sort=age
+// // const url = `https://kea2ndsem-4584.restdb.io/rest/barscph?q={"location" : {"$in" : ["${area}"]}}`;
+// // const url = `https://kea2ndsem-4584.restdb.io/rest/barscph?q={"$distinct": "location"}`;
 
-//changing area headers
+// const url = "https://kea2ndsem-4584.restdb.io/rest/barscph?filter=" + location;
 
-function showArea(area) {
-  console.log(area);
-  //grab the template
-  const template = document.querySelector("#mainTemplate").content;
+// console.log(url);
+// //API-key
+// const options = {
+//   headers: {
+//     // "x-apikey": "620a2fc134fd6215658584c2",
+//   },
+// };
+// //fetch the data
+// fetch(url, options)
+//   .then((res) => res.json())
+//   .then((data) => showArea(data));
 
-  //clone it
-  const copy = template.cloneNode(true);
+// //changing area headers
 
-  //change content
-  copy.querySelector(".area a").href += area.location;
-  // copy
-  //   .querySelector("a")
-  //   .setAttribute("href", "barlist.html?location=" + area.location);
+// function showArea(location) {
+//   console.log(location);
+//   data.forEach(showArea);
 
-  copy.querySelector("p").textContent = `${area.location}`;
+//   //grab the template
+//   const template = document.querySelector("#mainTemplate").content;
 
-  //grab parent
-  const parent = document.querySelector("main");
+//   //clone it
+//   const copy = template.cloneNode(true);
 
-  //append it
-  parent.appendChild(copy);
+//   //change content
+//   copy.querySelector(".area a").href += area.location;
+//   // copy
+//   //   .querySelector("a")
+//   //   .setAttribute("href", "barlist.html?location=" + area.location);
 
-  //change content
-  // document
-  //   .querySelector(".chris a")
-  //   .setAttribute("href", `barlist.html?location=${area.Christianshavn}`);
-  // document.querySelector(".chris a").href += area.location;
-}
+//   copy.querySelector("p").textContent = `${area.location}`;
+
+//   //grab parent
+//   const parent = document.querySelector("main");
+
+//   //append it
+//   parent.appendChild(copy);
+
+//   //change content
+//   // document
+//   //   .querySelector(".chris a")
+//   //   .setAttribute("href", `barlist.html?location=${area.Christianshavn}`);
+//   // document.querySelector(".chris a").href += area.location;
+// }
