@@ -199,7 +199,7 @@ body#barlist .barname {
   font-size: 1.6rem;
 }
 .star {
-  background-image: url(/img/Icon\ feather-star.svg);
+  background-image: url(/img/Icon_feather-star.svg);
   background-size: auto;
   background-repeat: no-repeat;
   aspect-ratio: 1/1;
